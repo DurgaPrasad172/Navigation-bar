@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  --header-height: 3.5rem;
+  --first-color: hsl(28, 88%, 62%);
+  /* Add other variables as needed */
+}
+/* src/App.css */
+
+/* App.css */
+
+.app {
+  display: flex;
+}
+
+.sidebar {
+  background: #333;
+  color: #fff;
+  width: 200px;
+  padding: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+}
+
+.sidebar .active {
+  background-color: #555;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Media Query for Responsive Sidebar */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
